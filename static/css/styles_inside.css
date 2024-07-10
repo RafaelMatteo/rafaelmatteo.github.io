@@ -1,0 +1,121 @@
+body {
+	  margin: 0;
+	  display: grid;
+	  grid-template-columns: auto 1fr; /* Dos columnas: una para aside y otra para main */
+	  grid-template-rows: auto auto 1fr; /* Tres filas: una para el header otra para el main y para aside y main */
+	  height: 100vh; /* Ajusta la altura de la pantalla completa si es necesario */
+  }
+
+  header {
+	  grid-column: 1 / -1; /* El header ocupa todas las columnas */
+	  height: 50px;
+	  background-color: #0000cd;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 40px;
+	  font-weight: bold;
+	  color: white;
+	  padding: 10px 10px 10px 15px;
+  }
+
+  nav {
+	  grid-column: 1 / -1; /* El nav ocupa todas las columnas */
+	  height: 20px;
+	  padding: 3px 3px 3px 15px;
+	  background-color: #ffa500;
+	  text-decoration: none;
+	  font-size: 15px;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-weight: bold;
+  }
+
+  aside {
+	  padding: 15px;
+    width: 175px;
+	  background-color: #0000cd;
+  }
+
+  #p-aside {
+  	font-family: Arial, Helvetica, sans-serif;
+	  font-weight: bold;
+	  font-size: 15px;
+	  color: #fff;
+  }
+
+  #titulo-aside {
+    font-family: Arial, Helvetica, sans-serif;
+	  font-weight: bold;
+	  font-size: 20px;
+	  color: #fff;
+  }
+
+  main {
+  	margin: 0px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+	  overflow-y: auto;
+  }
+
+  #titulo {
+    margin-left: 15px;
+    background-color: #ffa500;
+  }
+
+  #h1 {
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: #0000cd;
+    color: #fff;
+  }
+
+/* Estilos de las tarjetas */
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  width: 350px; /* Ajusta según sea necesario */
+	height: 400px;
+  margin-right: 15px; /* Espacio entre tarjetas */
+  margin-left: 15px; /* Espacio entre tarjetas*/
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  background-color: #ebf5fb;
+}
+
+.card:last-child {
+  margin-right: 0; /* Elimina el espacio a la derecha de la última tarjeta */
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  /* height: auto; */
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #ffa500;
+  color: #000;
+  border-radius: 4px;
+}
