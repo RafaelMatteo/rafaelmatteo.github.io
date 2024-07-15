@@ -1,62 +1,25 @@
 
 body {
-	/*margin: 0;*/
-  margin-left: 0;
-  margin-top: 0;
+  background-color: mediumblue;
 	  display: grid;
-	  grid-template-rows: auto 1fr; /* Tres filas: una para el header otra para el man y para aside y main */
+	  grid-template-rows: auto 1fr; /* Dos filas: una para el header otra para el main*/
 	  height: 100vh; /* Ajusta la altura de la pantalla completa si es necesario */
   }
 
-  h1 {
-    margin-left: 15px;
-  }
-
   /* Estilos de las tarjetas */
-
-  .card-container {
-    display: flex;
-  }
-
-  .card {
-    width: 350px; /* Ajusta según sea necesario */
-    height: 400px;
-    margin-right: 15px; /* Espacio entre tarjetas */
-    margin-left: 15px; /* Espacio entre tarjetas*/
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* background-color: #fff; */
+  #card {
     background-color: #ebf5fb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   }
 
-  .card:last-child {
-    margin-right: 0; /* Elimina el espacio a la derecha de la última tarjeta */
-  }
-
-  .card img {
+  #card img {
     width: 100%;
-    height: 180px;
-    /* height: auto; */
-    border-bottom: 1px solid #ddd;
+    height: 200px;
   }
 
-  .card-body {
-    padding: 15px;
-  }
-
-  .card-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-
-  .card-text {
-    color: #666;
-  }
-
-  .btn {
-    display: inline-block;
+  #btn {
+    display: block;
+    max-width: 200px;
     padding: 8px 16px;
     text-decoration: none;
     background-color: #ffa500;

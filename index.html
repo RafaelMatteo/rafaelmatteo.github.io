@@ -1,50 +1,50 @@
 <!DOCTYPE HTML>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Rafael Matteo Mourigan Portfolio.
-        </title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rafael Matteo Portfolio.
+    </title>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="./static/js/scripts.js"></script>
 
-        <script src="./static/js/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
-        
-    </head>
-  
-    <body>
-        <div class="container">
-            <!-- English version-->
-            <div class="column">
-                <a href="#" class="btn" onclick="cargarOtraPagina('./folder_english/index.html')">
-                    <p id="title">
-                        Welcome:
-                    </p>
-                    <img id="image" src="./images/english.png" alt="United Kingdom and United States flags">
-                    <p id="name">
-                        Rafael Matteo's Portfolio.
-                    </p>
-                    <p id="text">
-                        English version.
-                    </p>
-                </a>
-            </div>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css">  
+  </head>
 
-            <!-- Spanish version-->
-            <div class="column">
-                <a href="#" class="btn" onclick="cargarOtraPagina('./spanish/index.html')">
-                    <p id="title">
-                        Bienvenido
-                    </p>
-                    <img id="image" src="./images/spanish.png" alt="Bandera de España">
-                    <p id="name">
-                        Portafolio de Rafael Matteo.
-                    </p>
-                    <p id="text">
-                        Version en Español.
-                    </p>
-                </a>
-            </div>
-        </div>
-    </body>
+  <body>
+
+    <div class="container vh-100 d-flex flex-column justify-content-center">
+
+      <div id="title" class="mt-4">
+        WELCOME
+      </div>
+      <div id="subtitle" class="mt-1">
+        Rafael Matteo's Portfolio
+      </div>
+
+      <div class="row flag-row mt-3">
+          <div class="col-12 col-md-6 flag-container mb-4 mb-md-0">
+              <img src="../static/images/english.png" class="img mb-3" href="#" 
+                type="button" onclick="cargarOtraPagina('./spanish/index.html')">
+              <a href="#" class="btn me-2" id="btn" type="button" 
+                onclick="cargarOtraPagina('./spanish/index.html')"> Enter in English </a>
+          </div>
+          <div class="col-12 col-md-6 flag-container">
+              <img src="../static/images/spanish.png" class="img mb-3" href="#" 
+                type="button" onclick="cargarOtraPagina('./spanish/index.html')">
+              <a href="#" class="btn me-2" id="btn" type="button" 
+                onclick="cargarOtraPagina('./spanish/index.html')"> Ingresar en Español </a>
+          </div>
+      </div>
+
+      <div id="title" class="mt-3">
+        BIENVENIDO
+      </div>
+      <div id="subtitle">
+        Portafolio de Rafael Matteo
+      </div>
+    </div>
+  </body>
 </html>

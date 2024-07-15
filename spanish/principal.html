@@ -19,154 +19,95 @@
   
   <body>
 
-    <div class="container mt-3 pe-0" style="background-color: orange;">
+    <div class="container mt-3 pe-0" style="background-color:orange;">
       <div class="container ps-2 text-light fs-4 fw-bold" style="background-color: mediumblue;">
         Sobre Mi y mis proyectos...
       </div>
     </div>
 
     <div class="container mt-3">
-      <div class="row row-cols-1 row-cols-md-3 g-1 ps-0">
-        <div class="col mt-0 ps-0">
-          <div class="card ms-0">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col p-2">
+          <div class="card" id="card">
             <img src="../static/images/about_me.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title fw-bold">Sobre Mi...</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title fw-bold">
+                <span style="color: #0000cd;">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </span>
+                Sobre Mi...
+              </h5>
+              <p class="card-text">Breve historia de mis comienzos en el desarrollo de aplicaciones hasta el Análisis y Ciencia de Datos 
+                con Python.</p>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pb-2 pe-3">
+              <a href="#" class="btn me-md-2" id="btn" type="button" onclick="cargarOtraPagina('about_me.html')"> Leer más </a>
             </div>
           </div>
         </div>
 
-        <div class="col mt-0">
-          <div class="card ms-0">
-            <img src="../static/images/about_me.jpg" class="card-img-top" alt="...">
+        <div class="col p-2">
+          <div class="card" id="card">
+            <img src="../static/images/technical_skills.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title fw-bold">Sobre Mi...</h5>
+              <h5 class="card-title fw-bold">
+                <span style="color: #0000cd;">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </span>
+                Habilidades técnicas...
+              </h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pb-2 pe-3">
+              <a href="#" class="btn me-md-2" id="btn" type="button" onclick="cargarOtraPagina('technical_skills.html')"> Leer más </a>
             </div>
           </div>
         </div>
-      
-        <div class="col mt-0">
-          <div class="card ms-0">
-            <img src="../static/images/about_me.jpg" class="card-img-top" alt="...">
+
+        <div class="col p-2">
+          <div class="card" id="card">
+            <img src="../static/images/pydjango.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title fw-bold">Sobre Mi...</h5>
+              <h5 class="card-title fw-bold">
+                <span style="color: #0000cd;">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </span>
+                Python y django...
+              </h5>
+              <p class="card-text">Algunos de mis proyectos como programador Python, pasando por el paquete Tkinter y 
+                culminando con El Framework django.</p>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pb-2 pe-3">
+              <a href="#" class="btn me-md-2" id="btn" type="button" onclick="cargarOtraPagina('python_django.html')"> Leer más </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col p-2">
+          <div class="card" id="card">
+            <img src="../static/images/data_analysis_python.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                <span style="color: #0000cd;">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </span>
+                Analisis de Datos...
+              </h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pb-2 pe-3">
+              <a href="#" class="btn me-md-2" id="btn" type="button" onclick="cargarOtraPagina('data_analysis.html')"> Leer más </a>
             </div>
           </div>
         </div>
     </div>
 
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-1 mt-3 bg-warning">
-        <div class="col mt-0">
-          <div class="card ms-0">
-            <img src="../static/images/about_me.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Sobre Mi...</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col mt-0">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mt-0">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     
     
     <!-- CONTENIDO ANTERIOR ESTA PARA ABAJO -->
 
     <!--
-    <div id="titulo">
-      <h1 id="h1">Sobre Mi y Mis Proyectos...</h1>
-    </div>
-    
-    <div class="card-container">
-
-      <div class="card">
-        <img src="../static/images/about_me.jpg" alt=" ">
-        <div class="card-body">
-            <h3 class="card-title">
-              <span style="color: #0000cd;">
-                <i class="fa-solid fa-circle-chevron-right"></i>
-              </span>
-              Sobre Mi
-            </h3>
-            <p class="card-text">
-              <strong> Nivel: </strong> Información <br>
-              Quien soy?
-            </p>
-            <a href="#" class="btn" onclick="cargarOtraPagina('about_me.html')"> Leer más </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="../static/images/technical_skills.jpg" alt=" ">
-        <div class="card-body">
-            <h3 class="card-title">
-              <span style="color: #0000cd;">
-                <i class="fa-solid fa-circle-chevron-right"></i>
-              </span>
-              Habilidades Técnicas
-            </h3>
-            <p class="card-text">
-              <strong> Nivel: </strong> Información <br>
-              Información sobre mis conocimientos y habilidades
-            </p>
-            <a href="#" class="btn" onclick="cargarOtraPagina('technical_skills.html')"> Leer más </a>
-        </div>
-      </div>
-    
-      <div class="card">
-        <img src="../static/images/pydjango.jpg" alt="Imagen de Python y Django">
-        <div class="card-body">
-            <h3 class="card-title">
-              <span style="color: #0000cd;">
-                <i class="fa-solid fa-circle-chevron-right"></i>
-              </span>
-              Python y Django
-            </h3>
-            <p class="card-text">
-              <strong> Info: </strong> Proyectos realizados con Python <br>
-              Puedes agregar más contenido aquí.
-            </p>
-            <a href="#" class="btn" onclick="cargarOtraPagina('data_analysis_excel.html')"> Leer más </a>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="card-container">
-
       <div class="card">
         <img src="../static/images/developing.avif" alt="Imagen de la tarjeta 4">
         <div class="card-body">
