@@ -23,7 +23,7 @@ function cargarOtraPagina(url) {
         document.getElementById("main").innerHTML = html;
         if (window.location.href.endsWith(url)) {
           // Reemplaza el estado actual si la URL es la misma
-          history.replaceState({ url: url }, '', url);
+          history.pushState({ url: url }, '', url);
         } else {
           // Agrega un nuevo estado al historial si la URL es diferente
           history.pushState({ url: url }, '', url);
