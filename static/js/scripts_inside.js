@@ -16,6 +16,8 @@
 // }
 //
 
+// ----------------------------------------------------------------------------------------------
+
 function cargarOtraPagina(url) {
     fetch(url)
       .then(response => response.text())
