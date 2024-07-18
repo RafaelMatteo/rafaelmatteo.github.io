@@ -1,5 +1,3 @@
-
-  
   #img { 
     width: 300px; /*360 - 324*/
     height: 433px; /*520 - 468*/
@@ -19,3 +17,11 @@
     border-radius: 4px;
   }
 
+  #btn_dwld {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #ffa500;
+    color: #000;
+    border-radius: 4px;
+  }
