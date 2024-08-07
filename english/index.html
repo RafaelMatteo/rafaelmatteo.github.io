@@ -4,79 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-      Rafael Matteo Mourigan Portfolio.
+      Rafael Matteo Mourigan's Portfolio.
     </title>
-
     <script src="../static/js/scripts_inside.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="../static/css/styles_inside.css">
-    <link href="../static/icons/css/all.min.css" rel="stylesheet">
     <link href="../static/icons/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles_inside.css"> -->
+    <!-- <link href="../static/icons/css/all.min.css" rel="stylesheet"> -->
     <!-- <link rel="icon"  type="image/png" href="./icons/wp.png"> -->
   </head>
   
-  <body onload="cargarOtraPagina('principal.html')">
+  <body onload="cargarOtraPagina('./principal.html')">
 
     <header id="header">
-        Rafael Matteo Mourigan's Portfolio
+      <div class="container-fluid " style="background-color: mediumblue;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="javascript:void(0)" onclick="cargarOtraPagina('../english/principal.html')">Rafael Matteo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="javascript:void(0)" onclick="cargarOtraPagina('../english/principal.html')">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="javascript:void(0);" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About me and my projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/about_me.html')">About Me</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/python_django.html')">Python Developer</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/data_analysis.html')">Data Analysis</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/data_science.html')">Data Science</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/machine_learning.html')">Machine Learning</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/deep_learning.html')">Deep Learning</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/technical_skills.html')">Technical skills</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="cargarOtraPagina('../english/certificates.html')">Certificates</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Resume
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./resume/resume_en.pdf" download="resume_en.pdf">Download</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="https://wa.me/59891667422?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank">
+                        <span style="color: #0000cd;">
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                        Send WhatsApp message
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="mailto:rafaelmatteomourigan@gmail.com" target="_blank">
+                        <span style="color: #0000cd;">
+                          <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        Send E-mail
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="https://www.linkedin.com/in/rjmatteomourigan/" target="_blank">
+                        <span style="color: #0000cd;">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        View LinkedIn profile
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+      </div>
+        
     </header>
     
-    <nav id="nav"></nav>
+    <main id="main">
 
-    <aside id="aside">
-
-      <!-- Skills Section -->
-
-      <p id="titulo-aside"> Skills:</p>
-      
-      <p id="p-aside">
-        <i class="fa-solid fa-caret-right"></i> Python developer
-      </p>
-      <p id="p-aside">
-        <i class="fa-solid fa-caret-right"></i> Django developer
-      </p>
-      <p id="p-aside">
-        <i class="fa-solid fa-caret-right"></i> Data Analysit
-      </p>
-      <p id="p-aside">
-        <i class="fa-solid fa-caret-right"></i> Data Scientist
-      </p>
-      <p id="p-aside">
-        <i class="fa-solid fa-caret-right"></i> Machine Learning
-      </p>
-
-      <hr> <!-- Section Separator -->
-
-      <!-- Contact Section -->
-
-      <p id="titulo-aside"> Contact:</p>
-      
-      <p id="p-aside">
-        <i class="fa-brands fa-whatsapp"></i> +598 91 667 422
-      </p>
-
-      <p id="p-aside">
-        <i class="fa-solid fa-location-dot"></i> Canelones, Uruguay
-      </p>
-
-      <p id="p-aside">
-        <i class="fa-solid fa-envelope"></i> E-Mail
-      </p>
-
-      <p id="p-aside">
-        <i class="fa-brands fa-linkedin"></i> rjmatteomourigan
-      </p>
-
-      <hr> <!-- Section Separator -->
-
-      <p id="titulo-aside"> Resume:</p>
-
-      <p id="p-aside">
-        <i class="fa-solid fa-caret-right"></i> Download
-      </p>
-      
-    </aside>
-
-    <main id="main"></main>
+    </main>
 
   </body>
 </html>
