@@ -40,4 +40,3 @@ function cargarOtraPagina(url) {
       cargarOtraPagina(event.state.url);
     }
   });
-

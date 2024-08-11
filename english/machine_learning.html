@@ -35,60 +35,95 @@
                 <br>
                 Here you will find projects ranging from image classification to numerical value prediction,
                 each optimized through hyperparameter tuning and cross-validation techniques.
-              <ul>
-                <li>
-                  <h5><strong>Recipes</strong></h5>
-                </li>
-                <ul>
-                  <li>
-                    Title: From modeling to evaluation.
-                    <ul>
-                      <li>
-                        Dataset: recipes.csv
-                      </li>
-                      <li>
-                        Tools: Python, Jupyter Lab, Numpy, Pandas, Sikit-learn, Mathplotlib, Graphviz.
-                        <br>
-                        <a class="btn_dwld" id="btn_dwld" href="./projects/machine_learning/cooks.zip" 
-                                                          download="cooks.zip">Download Cooks</a> .zip file.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </ul>
-              <br>
-              <ul>
-                <li>
-                  <h5><strong>Automovile</strong></h5>
-                </li>
-                <ul>
-                  <li>
-                    Title: Car Price Prediction.
-                    <ul>
-                      <li>
-                        Dataset: <a href="https://archive.ics.uci.edu/dataset/10/automobile">UCI Machine Learning Repository</a>
-                      </li>
-                      <li>
-                        Tools: Python, Jupyter Lab, Numpy, Pandas, Scikit-learn, SciPy ... (AGREGAR LAS OTRAS)
-                        <br>
-                        <a class="btn_dwld" id="btn_dwld" href="./projects/machine_learning/Automovile_V11.zip" 
-                                                          download="Automovile_V11.zip">Download Automovile V11</a> .zip file.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </ul>
-              <br>
-              <ul>
-              
-              </ul>
-              <br>
-                  
             </p>
-            <p class="card-text text-end"><small class="text-muted">Last update: August 06, 2024</small></p>
+
+            <ul>
+              <li>
+                <h5><strong>Recipes</strong></h5>
+              </li>
+              <ul>
+                <li>
+                  <h6><strong>From modeling to evaluation.</strong></h6>
+                  Dataset Description:<br>
+                  The data was compiled by a researcher named Yong-Yeol Ahn, who extracted tens of thousands of food 
+                  recipes (cuisines and ingredients) from three different websites, namely:
+                  <ul>
+                    <li><a href="www.allrecipes.com" target="_blank">www.allrecipes.com</a></li>
+                    <li><a href="www.epicurious.com" target="_blank">www.epicurious.com</a></li>
+                    <li><a href="www.menupan.com" target="_blank">www.menupan.com</a></li>
+                  </ul>
+                  Our dataset consists of several recipes and their respective ingredients. <br>
+                  Each row represents a recipe, and for each recipe, the corresponding geographic area is documented
+                  and whether or not the ingredients exist in the recipe, starting with almond
+                  and ending with zucchini. <br>
+                  We want to determine which ingredients are most commonly used in each geographic area. <br>
+                  For this reason, the name of each recipe was removed, leaving only the geographic area and
+                  ingredients.
+                  <br>
+                  <br>
+                  <li>
+                    Dataset: recipes.csv
+                  </li>
+                  <li>
+                    Tools: Python, Jupyter Lab, Numpy, Pandas, Matplotlib, Graphviz, Scikit-Learn
+                  </li>
+                  <li>
+                    You can download the complete project (zip).
+                    <br>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/machine_learning/Recipes.zip" download="Recipes.zip">Recipes.zip</a>
+                  </li>
+                </li>
+              </ul>
+            </ul>
+              
+            <ul>
+              <li>
+                <h5><strong>Automovile</strong></h5>
+              </li>
+              <ul>
+                <li>
+                  <h6><strong>Predicting car prices</strong></h6>
+                  This data set consists of three types of entities: (a) a car's specification
+                  in terms of various features, (b) its assigned insurance risk rating, (c)
+                  its normalized losses in use compared to other cars. <br>
+                  The second rating corresponds to the degree to which the car is riskier than its price indicates.
+                  Cars are initially assigned a risk factor symbol associated with their price.
+                  Then, if it is riskier (or less), this symbol is adjusted by moving it up (or down)
+                  on the scale. Actuaries call this process "symbolization." A value of +3 indicates that the
+                  car is risky, -3 that it is probably quite safe. <br>
+                  The third factor is the relative average loss payment per insured vehicle year.
+                  This value is normalized for all cars within a particular size classification (small 2-door, 
+                  station wagon, sport/special, etc.) and represents the average loss per car per year. <br>
+                  <strong>Note: </strong> <br>
+                  After evaluating multiple machine learning models for predicting car prices, XGBoost stood out as 
+                  the best option. This model showed superior performance with a Mean Square Error (MSE) of 0.09, a 
+                  Mean Absolute Error (MAE) of $200, and a Coefficient of Determination (R²) of 0.95. These results 
+                  reflect the high accuracy and fine-tuning ability of the model, making it a reliable tool for 
+                  estimating prices in the automotive market. XGBoost not only minimized errors in predictions, but 
+                  also explained 95% of the variability in prices, proving to be the optimal solution for this project. <br>
+                  <br>
+                  <li>
+                    Dataset extracted from: <a href="https://archive.ics.uci.edu/dataset/10/automobile" target="_blank">UCI Machine Learning Repository</a>
+                  </li>
+                  <li>
+                    Tools: Python, Jupyter Lab, Numpy, Pandas, Scikit-Learn, StatsModels, DateTime, Scipy, Wget, XGBoost, Matplotlib, Seaborn,
+                    GridSearchCV, RandomizedSearchCV, LinearRegression, Ridge, RandomForestRegressor, GradientBoostingRegressor, Pipeline,
+                    mean_squared_error, mean_absolute_error, r2_score, RFE, PCA
+                  </li>
+                  <li>
+                    You can download the complete project (zip).
+                    <br>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/machine_learning/Automovile_V11.zip" download="Automovile_V11.zip">Automovile_V11.zip</a>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/machine_learning/Automovile_V11.pdf" download="Automovile_V11.pdf">Automovile_V11.pdf</a>
+                  </li>
+                </li>
+              </ul>  
+            </ul>    
+
           </div>
         </div>
-      </div>  
+      </div>
+      <p class="card-text text-end"><small class="text-muted">Last update: August 06, 2024</small></p>  
     </div>
   </body>
 </html>

@@ -30,77 +30,119 @@
                 En esta sección, presento mis proyectos en el campo de la ciencia de datos. Utilizando técnicas avanzadas de modelado 
                 y análisis, como la regresión, clasificación y clustering, he abordado problemas complejos y generado soluciones 
                 innovadoras. 
-                <br>
+              <br>
                 Los proyectos que verás aquí demuestran mi capacidad para manejar datasets grandes y diversos, realizar análisis 
                 exploratorios profundos y construir modelos predictivos robustos.
-              <ul>
-                <li>
-                  <h5><strong>SQL y Python</strong></h5>
-                </li>
-                <ul>
-                  <li>
-                    Título: Datos de la Ciudad de Chicago
-                    <ul>
-                      <li>
-                        Conjunto de datos: <a href="https://data.cityofchicago.org/">Chicago Data Portal</a>
-                      </li>
-                      <li>
-                        Herramientas utilizadas: Python, Jupyter Lab, Numpy, Pandas, SQL
-                        <br>
-                        <a class="btn_dwld" id="btn_dwld" href="./projects/data_science/Datos_Chicago.zip" 
-                                            download="Datos_Chicago.zip">Descargar Datos Chicago</a> archivo .zip
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </ul>
-              <br>
-              <ul>
-                <li>
-                  <h5><strong>Web Scraping</strong></h5>
-                </li>
-                <ul>
-                  <li>
-                    Título: HTML Color Codes
-                    <ul>
-                      <li>
-                        Conjunto de datos: <a href="https://htmlcolorcodes.com/">Color Codes</a>
-                      </li>
-                      <li>
-                        Herramientas utilizadas: Python, Jupyter Lab, Pandas, BS4 (BeautifulSoup)
-                        <br>
-                        <a class="btn_dwld" id="btn_dwld" href="./projects/data_science/HTMLColorCodes.zip" 
-                                  download="HTMLColorCodes.zip">Descargar HTMLColorCodes</a> archivo .zip
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <br>
-                <ul>
-                  <li>
-                    Título: World Population
-                    <ul>
-                      <li>
-                        Conjunto de datos: <a href="https://www.worldometers.info/world-population/">World Population</a>
-                      </li>
-                      <li>
-                        Herramientas utilizadas: Python, Jupyter Lab, Pandas, BS4 (BeautifulSoup)
-                        <br>
-                        <a class="btn_dwld" id="btn_dwld" href="./projects/data_science/WorldPopulation.zip" 
-                                            download="WorldPopulation.zip">Descargar WorldPopulation</a> archivo .zip
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </ul>
-              <br>
-                  
-              </ul>
             </p>
-            <p class="card-text text-end"><small class="text-muted">Última actualización: 05 de Agosto de 2024</small></p>
+
+            <ul>
+              <li>
+                <h5><strong>SQL y Python</strong></h5>
+              </li>
+              <ul>
+                <li>
+                  <h6><strong>Datos de la Ciudad de Chicago</strong></h6>
+                  <h6>Boletas de calificaciones de progreso (2011-2012):</h6>
+                  Este conjunto de datos muestra todos los datos de rendimiento a nivel escolar utilizados para 
+                  crear los Boletines de Calificaciones Escolares de BCE para el año escolar 2011-2012.
+                  <ul>
+                    <li>Conjunto de datos extraido de: <a href="https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t/about_data" target="_blank">Chicago Public Schools</a></li>
+                  </ul>
+                  <br>
+                  <h6>Datos de indicadores Socioeconómico (2008-2012):</h6>
+                  Este conjunto de datos contiene una selección de seis indicadores socioeconómicos de importancia 
+                  para la salud pública y un “índice de dificultades” para cada área comunitaria de Chicago, para 
+                  los años 2008 a 2012.
+                  <ul>
+                    <li>Conjunto de datos extraido de: <a href="https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2/about_data" target="_blank">Chicago Census Data</a></li>
+                  </ul>
+                  <br>
+                  <h6>Datos de Crimenes (2012):</h6>
+                  Este conjunto de datos refleja los incidentes delictivos denunciados (con excepción de los 
+                  asesinatos, donde existen datos para cada víctima) que ocurrieron en la ciudad de Chicago en el 
+                  año 2012. <br>
+                  Estos conjuntos de datos son proporcionados por el portal de datos de la Ciudad de Chicago. <br>
+                  <ul>
+                    <li>Conjunto de datos extraido de: <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2012/hx8q-mf9v/about_data" target="_blank">Chicago Crime Data</a></li>
+                  </ul>
+                  <br>
+                  <li>
+                    Herramientas utilizadas: Python, Jupyter Lab, Pandas, SQLite3, SQLalchemy, Matplotlib, Seaborn
+                  </li>
+                  <li>
+                    Puedes descargar el proyecto completo (zip) o solo el código (pdf).
+                    <br>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/data_science/Datos_Chicago.zip" download="Datos_Chicago.zip">Datos_Chicago.zip</a>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/data_analysis/Datos_Chicago.pdf" download="Datos_Chicago.pdf">Datos_Chicago.pdf</a>
+                  </li>
+                </li>
+              </ul>
+            </ul>
+              
+            <ul>
+              <li>
+                <h5><strong>Web Scraping</strong></h5>
+              </li>
+              <ul>
+                <li>
+                  <h6><strong>HTML Color Codes</strong></h6>
+                  En este proyecto, he desarrollado una solución de web scraping para extraer información detallada sobre códigos 
+                  de color HTML desde un sitio web especializado. Utilizando técnicas avanzadas de scraping, mi herramienta recoge 
+                  datos precisos sobre una amplia gama de colores, incluyendo sus nombres, códigos hexadecimales y representaciones 
+                  RGB. <br>
+                  <strong>Proceso:</strong> La solución navega por el sitio web objetivo, identifica y extrae información relevante 
+                  sobre los colores, y organiza los datos en un formato estructurado para su posterior análisis o uso.
+                  <br>
+                  <li class="mt-2">
+                    Conjunto de datos extraido de: <a href="https://htmlcolorcodes.com/">Color Codes</a>
+                  </li>
+                  <li>
+                    Herramientas utilizadas: Python, Jupyter Lab, Pandas, Request, BS4 (BeautifulSoup)
+                  </li>
+                  <li>
+                    Puedes descargar el proyecto completo (zip) o solo el código (pdf).
+                    <br>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/data_science/HTMLColorCodes.zip" download="HTMLColorCodes.zip">HTMLColorCodes.zip</a>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/data_science/HTMLColorCodes.pdf" download="HTMLColorCodes.pdf">HTMLColorCodes.pdf</a>
+                  </li>
+                </li>
+              </ul>  
+            </ul>    
+                  
+            <ul>
+              <li>
+                <h5><strong>Web Scraping</strong></h5>
+              </li>
+              <ul>
+                <li>
+                  <h6><strong>Poblacion Mundial</strong></h6>
+                  En este proyecto, he desarrollado una solución de web scraping para extraer datos detallados sobre la población 
+                  mundial desde el sitio web Worldometers. Mi herramienta está diseñada para recopilar información actualizada y 
+                  precisa sobre la población de diferentes países y regiones, proporcionando una visión integral de las estadísticas 
+                  globales. <br>
+                  <strong>Proceso: </strong>La herramienta navega por Worldometers, identifica las tablas y secciones relevantes, y 
+                  extrae datos sobre la población de países y regiones en tiempo real. Los datos se organizan y almacenan en un 
+                  formato estructurado para su análisis posterior.
+                  <li class="mt-2">
+                    Conjunto de datos extraido de: <a href="https://www.worldometers.info/world-population/">World Population</a>
+                  </li>
+                  <li>
+                    Herramientas utilizadas: Python, Jupyter Lab, Pandas, Request, BS4 (BeautifulSoup)
+                  </li>
+                  <li>
+                    Puedes descargar el proyecto completo (zip) o solo el código (pdf).
+                    <br>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/data_science/Poblacion_Mundial_V2.zip" download="Poblacion_Mundial_V2.zip">Poblacion_Mundial.zip</a>
+                    <a class="btn_dwld m-2" id="btn_dwld" href="./projects/data_science/Poblacion_Mundial_V2.pdf" download="Poblacion_Mundial_V2.pdf">Poblacion_Mundial.pdf</a>
+                  </li>
+                </li>
+              </ul>
+            </ul> 
+
           </div>
         </div>
       </div>  
+      <p class="card-text text-end"><small class="text-muted">Última actualización: 09 de Agosto de 2024</small></p>
     </div>
   </body>
 </html>
