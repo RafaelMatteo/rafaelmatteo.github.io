@@ -3,6 +3,12 @@
     height: 433px; /*520 - 468*/
   }
 
+  /* Estilos de las tarjetas */
+  .card {
+    background-color: #ebf5fb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+
   .div_vvr {
     margin-right: 30px;
     text-align: right;
